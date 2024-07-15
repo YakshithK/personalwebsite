@@ -5,13 +5,16 @@
     box-sizing: border-box;
 }
 body {
-    background: #fff;
+    background: #000000;
     color: #fff;
 }
 
 #header{
     width: 100%;
     height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .container{
@@ -33,7 +36,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #000000;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -53,23 +56,16 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-    color: #000000;
-}
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-}
 
 .header-container {
-    text-align: center;
-    margin-top: 20px;
+    margin-top: 10%;
+    font-size: 30px;
+    color: #fff;
 }
 
 .header-container h1 {
-    color: rgb(0, 0, 0);
+    font-size: 60px;
+    margin-top: 20px;
 }
 
 #animated-heading {
@@ -80,4 +76,68 @@ nav ul li a:hover::after{
 @keyframes fade {
     0%, 33.33%, 100% {opacity: 1;}
     16.66%, 50% {opacity: 0;}
+}
+/*---------about---------*/
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transform: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+     color: #b54769;
+     font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
