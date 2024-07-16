@@ -13,17 +13,17 @@
     <div class="container">
         <nav>
             <img src="images/Yakshith.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#">Newsletter</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#">Experience</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-                <i class="fa-solid fa-xmark"></i>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-container">
             <h1 id="animated-heading">I'm Yakshith!</h1>
@@ -141,7 +141,7 @@
     </div>
 </div>
 <!-----contact------>
-<div id="contant">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -155,12 +155,13 @@
                 <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="text" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -170,5 +171,23 @@
 </div>
 
 <script src="script.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxK3gdF7dxEqb-ymgJ1ST40hUVmQVDwiulEjI1JUsCa7iQqYSmPEIZBRWZBCpUjmEC5/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Succesfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
 </body>
 </html>
