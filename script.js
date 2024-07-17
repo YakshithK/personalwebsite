@@ -1,7 +1,7 @@
 const phrases = [
-    "I'm A Developer!",
-    "I'm A Student!",
-    "I'm An Innovator!"
+    "I'm A Developer.",
+    "I'm A Student.",
+    "I'm An Innovator."
 ];
 
 let currentIndex = 0;
@@ -12,7 +12,7 @@ function changePhrase() {
     heading.textContent = phrases[currentIndex];
 }
 
-setInterval(changePhrase, 4000)
+setInterval(changePhrase, 2000)
 
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
