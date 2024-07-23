@@ -1,22 +1,23 @@
+@font-face { font-family: Poppins-bold; src: url(images/Poppins-Bold.ttf); } 
+@font-face { font-family: Poppins; src: url(images/Poppins-Regular.ttf); } 
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium';
-    box-sizing: border-box;
-}
+    font-family: Poppins-bold;
+    box-sizing: border-box;}
 html{
     scroll-behavior: smooth;
 }
 body {
-    background: #fff;
-    color: #fff;
+    line-height: 1.6;
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 #header{
     width: 100%;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
 }
 
 .logo{
@@ -45,7 +46,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color:#0143ff;;
+    color:#f5d08d;;
     text-decoration: none;
     font-size: 100%;
     position: relative;
@@ -55,7 +56,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #0143ff;
+    background: #f5d08d;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -70,7 +71,7 @@ nav ul li a:hover::after{
 
 #header-text {
     padding-top: 30vh;
-    color: #0143ff;
+    color: #f5d08d;
     font-size: 15vh;
     font-weight: bold;
     text-align: center;
@@ -90,8 +91,8 @@ nav ul li a:hover::after{
 
 #header i{
     font-size: 10vh;
-    color: #0143ff;
-    padding-top: 10%;
+    color: #f5d08d;
+    padding-top: 5%;
     padding-left: 45vw;
     transition: transform 0.5s, color 0.5s;
 
@@ -99,7 +100,7 @@ nav ul li a:hover::after{
 
 #header i:hover{
     transform: translateY(-15px);
-    color: #063ac9;
+    color: #887146;
 
 }
 
@@ -118,22 +119,23 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 86%;
+    padding-top: 20vh;
     border-radius: 15px;
 }
 .about-col-2{
     flex-basis: 60%;
-    color: #000000;
-    font-size: 1.5vw;
+    color: #f5d08d;
+    font-size: 1.25vw;
 }
 
 .sub-title{
     font-size: 60px;
-    color: black;
+    color: #f5d08d;
     text-align: center;
 }
 .about-col-2 p{
     padding-top: 5vh;
-    font-family: 'Arial';
+    font-family: Poppins;
 }
 .tab-titles{
     display: flex;
@@ -150,7 +152,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #9e865a;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -164,7 +166,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-     color: #b54769;
+     color: #9e865a;
      font-size: 14px;
 }
 .tab-contents{
@@ -205,7 +207,7 @@ nav ul li a:hover::after{
     margin-top: 70px;
 }
 .skills-list-1 div{
-    background: #262626;
+    background: #f5d08d;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -224,13 +226,13 @@ nav ul li a:hover::after{
 }
 .skills-list-1 div a{
     text-decoration: none;
-    color: #000000;
+    color: #f5d08d;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 .skills-list-1 div:hover{
-    background: #ff004f;
+    background: #9e865a;
     transform: translateY(-15px);
 }
 .skills-list-2{
@@ -240,7 +242,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .skills-list-2 div{
-    background: #262626;
+    background: #f5d08d;
     padding: 40px;
     font-size: 13px;
     border-radius: 10px;
@@ -259,13 +261,13 @@ nav ul li a:hover::after{
 }
 .skills-list-2 div a{
     text-decoration: none;
-    color: #000000;
+    color: #f5d08d;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 .skills-list-2 div:hover{
-    background: #ff004f;
+    background: #9e865a;
     transform: translateY(-15px);
 }
 /* Experience Section */
@@ -284,12 +286,12 @@ nav ul li a:hover::after{
 
 .column h2 {
     font-size: 2em;
-    color: black;
+    color: #f5d08d;
     margin-bottom: 20px;
 }
 
 .card {
-    background: #fff;
+    background: #f5d08d;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -310,13 +312,13 @@ nav ul li a:hover::after{
 
 .card h4 {
     font-size: 1.2em;
-    color: black;
+    color: f5d08d;
     margin-bottom: 15px;
 }
 
 .card p {
     font-size: 1em;
-    color: black;
+    color: f5d08d;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -352,7 +354,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.253), #0143ff);
+    background: linear-gradient(rgba(255, 255, 255, 0), #f5d08d);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -373,11 +375,11 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #9e865a;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #000000;
+    background: #f5d08d;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -392,15 +394,15 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #9e865a;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #000000;
+    color: #f5d08d;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #9e865a;
 }
 /*------contact-----*/
 .contact-left{
@@ -413,7 +415,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #9e865a;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -429,12 +431,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #9e865a;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #9e865a;
 }
 .contact-right form{
     width: 100%;
@@ -446,7 +448,7 @@ form input, form textarea{
     background: #262626;
     padding: 15px;
     margin: 15px 0;
-    color: #000000;
+    color: #f5d08d;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -465,7 +467,7 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f;
+    color: #9e865a;
 }
 /*-----------css for small screens------*/
 nav .fa-solid{
@@ -487,7 +489,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #9e865a;
         position: fixed;
         top: 0;
         right: -200px;
