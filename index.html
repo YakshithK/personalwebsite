@@ -40,7 +40,7 @@
                 <img src="images/user.jpg">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me:</h1>
+                <h1 class="sub-title" style="text-align: center;">About Me:</h1>
                 <p>I'm Yakshith, a high-school student from the Toronto area. 
                     I love building things that solve a real world problem faced by many. 
                     I’m passionate about emerging technologies like Artificial Intelligence, 
@@ -60,7 +60,7 @@
 <!------newsletter----->
 <div id="newsletter">
     <div class="container">
-        <h1 class="sub-title">Newsletter</h1>
+        <h1 class="sub-title" style="text-align: center;">Newsletter</h1>
         <div class="newsletter-embed">
             <iframe src="https://yakshithkommineni.substack.com/embed" width="480" height="320" 
                     frameborder="0" scrolling="no"></iframe>
@@ -70,7 +70,7 @@
 <!-----skills------>
 <div id="skills">
     <div class="container">
-        <h1 class="sub-title">Skills</h1>
+        <h1 class="sub-title" style="text-align: center;">Skills</h1>
         <div class="skills-list-1">
             <div>
                 <i class="fa-brands fa-python"></i>
@@ -107,7 +107,7 @@
 <!------experience------->
 <div id="experience">
     <div class="container">
-        <h1 class="sub-title">Experience</h1>
+        <h1 class="sub-title" style="text-align: center;">Experience</h1>
         <div class="experience-columns">
             <div class="column">
                 <h2>Education</h2>
@@ -162,8 +162,13 @@
 <!-----portfolio------>
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-row">
+        <h1 class="sub-title" style="text-align: center;">Portfolio</h1>
+        <div class="category-buttons">
+            <button data-category="all" onclick="opentab('all')">All</button>
+            <button data-category="python" onclick="opentab('python')">Python Projects</button>
+            <button data-category="pitch" onclick="opentab('pitch')">Pitch Decks</button>
+        </div>
+        <div class="work-row active-tab" id="all">
             <div class="work">
                 <img src="images/work-1.png">
                 <div class="layer">
@@ -193,8 +198,6 @@
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
-        </div>
-        <div class="work-row">
             <div class="work">
                 <img src="images/work-1.png">
                 <div class="layer">
@@ -219,6 +222,69 @@
                 <img src="images/work-3.png">
                 <div class="layer">
                     <h3>SchizoDetect</h3>
+                    <p>Combined machine learning with neurotechnology to detect Schizophrenia 
+                        with the subject's brainwaves while playing a simple game.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-row active-tab" id="python">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Python</h3>
+                    <p>Recommendation deck that was pitched to TikTok executives to make 
+                        TikTok's platform more favourable for educational creators.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Python</h3>
+                    <p>An AI tool that allows newly moved people to furnish their new home with style.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Python</h3>
+                    <p>Recommendation deck that was presented to Google executives to enhance
+                        employee product knowledge to improve sales.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-row active-tab" id="pitch">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Pitch</h3>
+                    <p>Utilizing 3D printing technology and biosensors to make prosthetics
+                        more accesible and functional for amputees worldwide.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Pitch</h3>
+                    <p>Used Brain-Computer Interface technology to allow patients with ALS, LIS etc to play 
+                        chess using their mind.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Pitch</h3>
                     <p>Combined machine learning with neurotechnology to detect Schizophrenia 
                         with the subject's brainwaves while playing a simple game.
                     </p>
@@ -276,6 +342,8 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+
 </script>
 </body>
 </html>
