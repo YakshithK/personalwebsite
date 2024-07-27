@@ -162,11 +162,13 @@
 <!-----portfolio------>
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title" style="text-align: center;">Portfolio</h1>
+        <h1 class="sub-title" style="text-align: center; padding-bottom: 5vh;">Portfolio</h1>
         <div class="category-buttons">
             <button data-category="all" onclick="opentab('all')">All</button>
-            <button data-category="python" onclick="opentab('python')">Python Projects</button>
+            <button data-category="python" onclick="opentab('python')">Software Projects</button>
             <button data-category="pitch" onclick="opentab('pitch')">Pitch Decks</button>
+            <button data-category="articles" onclick="opentab('articles')">Articles</button>
+            <button data-category="blender" onclick="opentab('blender')">Blender Projects</button>
         </div>
         <div class="work-row active-tab" id="all">
             <div class="work">
@@ -229,54 +231,22 @@
                 </div>
             </div>
         </div>
-        <div class="work-row active-tab" id="python">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Python</h3>
-                    <p>Recommendation deck that was pitched to TikTok executives to make 
-                        TikTok's platform more favourable for educational creators.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
+        <div class="work-row" id="python">
             <div class="work">
                 <img src="images/work-2.png">
                 <div class="layer">
-                    <h3>Python</h3>
-                    <p>An AI tool that allows newly moved people to furnish their new home with style.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>Python</h3>
-                    <p>Recommendation deck that was presented to Google executives to enhance
-                        employee product knowledge to improve sales.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="work-row active-tab" id="pitch">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Pitch</h3>
-                    <p>Utilizing 3D printing technology and biosensors to make prosthetics
-                        more accesible and functional for amputees worldwide.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>Pitch</h3>
+                    <h3>MuseChess</h3>
                     <p>Used Brain-Computer Interface technology to allow patients with ALS, LIS etc to play 
                         chess using their mind.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Furnish.AI</h3>
+                    <p>An AI tool that allows newly moved people to furnish their new home with style.
                     </p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
@@ -292,7 +262,78 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <div class="work-row" id="pitch">
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Google Consulting Challenge</h3>
+                    <p>Recommendation deck that was presented to Google executives to enhance
+                        employee product knowledge to improve sales.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Nexus Prosthetics</h3>
+                    <p>Utilizing 3D printing technology and biosensors to make prosthetics
+                        more accesible and functional for amputees worldwide.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>TikTok Consulting Challenge</h3>
+                    <p>Recommendation deck that was pitched to TikTok executives to make 
+                        TikTok's platform more favourable for educational creators.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-row" id="articles">
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>BCIs and Locked-In Syndrome</h3>
+                    <p>Imagine you’re sitting on a hospital bed. You try to get up but you can’t. You try to reach for the glass of water but you can’t. You try to move anything in your body but you can’t. You can only hear the hospital noises. This is a rare condition called locked-in syndrome.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Neuralink's First Human Implantation</h3>
+                    <p>After a long wait, Elon Musk’s company, Neuralink had its first BCI implantation in a human yesterday. This is something that has been highly anticipated by the tech world as Elon has been teasing us for quite some time.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-row" id="blender">
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>GameBoy Console</h3>
+                    <p>Simple GameBoy Advance Console modelling, texturing and shading with Blender.
+                        My first project venturing into Blender's 3D software.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Donut</h3>
+                    <p>My second blender project, made a scene with a plate and a few donuts stacks on top. Introduced me to complex lighting methods and my first time animating.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!-----contact------>

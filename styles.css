@@ -330,12 +330,13 @@ nav ul li a:hover::after{
 }
 .work-row.active-tab{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted min-width to be smaller */
+    grid-column: inherit;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjusted min-width to be smaller */
     grid-gap: 20px; /* Reduced gap between items */
     margin-top: 20px;
     align-items: center;
     width: 80vw;
-    height: 30vh;
+    height: 55vh;
     padding-left: 14vw;
     justify-content: center;
 }
@@ -394,6 +395,7 @@ nav ul li a:hover::after{
 .work-row.active-tab .work:hover .layer{
     height: 100%;
 }
+
 .btn{
     display: block;
     margin: 50px auto;
@@ -410,6 +412,7 @@ nav ul li a:hover::after{
 }
 
 .category-buttons {
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -418,13 +421,14 @@ nav ul li a:hover::after{
     padding: 10px 20px;
     cursor: pointer;
     border: none;
-    background-color: #e63946;
-    color: white;
+    background-color: #f5d08d;
+    color: rgb(0, 0, 0);
     font-size: 1em;
     transition: background-color 0.3s;
+    border-radius: 6px;
 }
 .category-buttons button:hover {
-    background-color: #d62828;
+    background-color: #9e865a;
 }
 
 
