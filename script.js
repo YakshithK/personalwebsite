@@ -40,3 +40,5 @@ function displayPage(int){
         workCards[start + 3].style.display = ''
     }
 }
+
+displayPage(1)

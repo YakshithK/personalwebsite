@@ -330,8 +330,8 @@ nav ul li a:hover::after{
 }
 .work-row.active-tab{
     display: grid;
-    grid-column: auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted min-width to be smaller */
+    grid-template-columns: repeat(4, 320px);
+    grid-template-rows: repeat(2, 180px);
     grid-gap: 20px;
     margin-top: 20px;
     width: inherit;
@@ -349,7 +349,7 @@ nav ul li a:hover::after{
 .work-row.active-tab .work img{
     width: 100%;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     transition: transform 0.5s;
 }
@@ -367,13 +367,14 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 20px; /* Reduced padding for more compact look */
+    padding: 0 10px; /* Reduced padding for more compact look */
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     transition: 0.5s;
 }
 .work-row.active-tab .layer h3{
     font-weight: 500;
+    padding-top: 100px;
     margin-bottom: 20px;
 }
 .work-row.active-tab .layer a{
