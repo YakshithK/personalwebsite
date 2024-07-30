@@ -357,7 +357,7 @@ nav ul li a:hover::after{
 .work-row.active-tab .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0), #f5d08d);
+    background: linear-gradient(rgba(255, 255, 255, 0.283), #f5d08d);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -374,18 +374,16 @@ nav ul li a:hover::after{
 }
 .work-row.active-tab .layer h3{
     font-weight: 500;
-    padding-top: 100px;
     margin-bottom: 20px;
 }
 .work-row.active-tab .layer a{
-    margin-top: 20px;
     color: #9e865a;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 60px;
     background: #f5d08d;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 }
 .work-row.active-tab .work:hover img{
@@ -463,7 +461,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #9e865a;
+    color: #796542;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -474,17 +472,17 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #796542;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #9e865a;
+    color: #796542;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #9e865a;
+    background: #796542;
 }
 .contact-right form{
     width: 100%;
@@ -515,7 +513,7 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright i{
-    color: #9e865a;
+    color: #796542;
 }
 /*-----------css for small screens------*/
 nav .fa-solid{

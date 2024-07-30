@@ -28,16 +28,20 @@ function displayPage(int){
     var active_tab = document.getElementsByClassName('active-tab');
     
     var workCards = active_tab[0].getElementsByClassName("work");
-    var totalWorkCards = workCards.length;
-
-    if (workCards.length > cardsper_page){
-        for (card of workCards){
-            card.style.display = 'none'
+    console.log(num)
+    if (num > 0){
+        if (workCards.length > cardsper_page){
+            for (card of workCards){
+                card.style.display = 'none'
+            }
+            workCards[start].style.display = ''
+            workCards[start + 1].style.display = ''
+            workCards[start + 2].style.display = ''
+            workCards[start + 3].style.display = ''
         }
-        workCards[start].style.display = ''
-        workCards[start + 1].style.display = ''
-        workCards[start + 2].style.display = ''
-        workCards[start + 3].style.display = ''
+    }
+    else{
+        num = 1
     }
 }
 
