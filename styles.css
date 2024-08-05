@@ -516,6 +516,9 @@ form .btn2{
 .copyright i{
     color: #796542;
 }
+.copyright P{
+    color: #f5d08d;
+}
 /*-----------css for small screens------*/
 nav .fa-solid{
     display: none;
