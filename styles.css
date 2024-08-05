@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     font-family: Poppins-bold;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -330,9 +331,9 @@ nav ul li a:hover::after{
 }
 .work-row.active-tab{
     display: grid;
-    grid-template-columns: repeat(4, 320px);
-    grid-template-rows: repeat(2, 180px);
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 160px);
+    grid-gap: 1px;
     margin-top: 20px;
     width: inherit;
     height: inherit;
@@ -343,7 +344,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    width: 100%; /* Ensure it takes full width of grid column */
+    width: 90%; 
     height: 100%;
 }
 .work-row.active-tab .work img{
